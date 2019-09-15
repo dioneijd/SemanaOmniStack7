@@ -15,11 +15,10 @@ routes.post('/posts', upload.single('image'), PostController.store)
 routes.post('/posts/:id/like', LikeController.store)
 
 
-/*
-routes.get('/', (req, res) => {
+
+routes.get('/teste', (req, res) => {
     return res.send(`hello world, ${req.query.name}!`);
-});
-*/
+})
 
 
 module.exports = routes
