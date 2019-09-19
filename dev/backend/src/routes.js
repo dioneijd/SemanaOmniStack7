@@ -4,6 +4,7 @@ const uploadConfig = require('./config/upload')
 
 const PostController = require('./controllers/PostController')
 const LikeController = require('./controllers/LikeController')
+const CommentController = require('./controllers/CommentController')
 
 const upload = multer(uploadConfig)
 
@@ -13,6 +14,9 @@ routes.get('/posts', PostController.index)
 routes.post('/posts', upload.single('image'), PostController.store)
 
 routes.post('/posts/:id/like', LikeController.store)
+
+//routes.post('/posts/:id/comment', express.json(), CommentController.store)
+routes.post('/posts/:id/comment', upload.none(), CommentController.store)
 
 
 
