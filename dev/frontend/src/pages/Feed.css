@@ -70,3 +70,49 @@ section#post-list article footer p span {
     display: block;
 }
 
+
+
+
+section#post-list article footer .comments {
+    font-size: 12px;
+}
+
+section#post-list article footer .comments .comment-info {
+    margin-top: 5px;
+}
+
+section#post-list article footer .comments .comment-info .user-info {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+
+
+section#post-list article footer form#new-comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+section#post-list article footer form#new-comment input[type=text] {
+    height: 38px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+section#post-list article footer form#new-comment button {
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 0;
+    background: transparent;
+    color: #7159c1;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
